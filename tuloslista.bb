@@ -11,7 +11,7 @@ Function hall_of_fame()
 	lue_lista()
 	nayta_lista()
 	Cls
-	DrawImage title,0,0
+	;DrawImage title,0,0
 	nayta_lista()
 	Flip
 	Delay 1000
@@ -49,7 +49,7 @@ Function nayta_lista()
 		If (tallenna_uusi = 1) Then 
 			If (a = uuden_paikka) Then vali = vali + 15
 		EndIf
-		Color 255,255,255
+		Color 255,127,39
 		If (a >= uuden_paikka And tallenna_uusi = 1) Then
 			If( a < listan_pituus) Then
 				Text 200,vali, a+1 +"  "+(nimet$(a,0) + "  " + tulokset(a,0) + "  " + "  " + nimet$(a,1))				
